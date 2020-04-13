@@ -12,7 +12,7 @@ Below you will find the gist of the Check-TSDependencies script in all its ugly 
 {% gist c66994593458a196001c %}
 
 
-Well as I mentioned in [a previous post](http://mrbodean.azurewebsites.net/2015/10/06/get-the-source-location-for-all-packages-in-a-sccm-task-sequence/)  I have been working on improving the processes we use at work to manage SCCM and this ugly little script ended up filling a real need. SCCM has great reporting in the console, if you want to see the status of all distribution points for a single package or the status of all packages on a single distribution point. But trying to determine the status of 30-40 packages quickly does not happen very quickly.  That is until I started running this script.
+Well as I mentioned in [a previous post]({% post_url /2015/2015-10-05-Get-the-Source-location-for-all-packages-in-a-SCCM-Task-Sequence %}/)  I have been working on improving the processes we use at work to manage SCCM and this ugly little script ended up filling a real need. SCCM has great reporting in the console, if you want to see the status of all distribution points for a single package or the status of all packages on a single distribution point. But trying to determine the status of 30-40 packages quickly does not happen very quickly.  That is until I started running this script.
 
 Then the need for improvements came a long. "This is great for one distribution point but I keep needing to 2 or 3 or 10 ..."; "This is great for troubleshooting after we have a issue, how can it be used proactively?"; "Displaying the status on the screen is ok but can you send a email of the status? Oh and I only want the email if there are failures." and so on ...
 
