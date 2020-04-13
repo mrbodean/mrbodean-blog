@@ -1,0 +1,20 @@
+theme: minima
+title: MrBoDean
+author: Jonathan Warnken
+description: > # this means to ignore newlines until "baseurl:"
+  Automation|Powershell|$true
+  Microsoft Endpoint Manager
+  Azure
+# social links
+twitter_username: MrBoDean # DO NOT include the @ character, or else the build will fail!
+github_username:  MrBoDean # DO NOT include the @ character, or else the build will fail!
+
+show_excerpts: true # set to false to remove excerpts on the homepage
+
+defaults:
+  -
+     scope:
+       path: ""
+       type: "pages"
+     values:
+       permalink: pretty
