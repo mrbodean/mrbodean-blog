@@ -18,6 +18,7 @@ plugins:
 google_analytics: UA-1101170-4
 
 permalink: pretty
+paginate: 5
 
 # Exclude from processing.
 # The following items will not be processed, by default.
