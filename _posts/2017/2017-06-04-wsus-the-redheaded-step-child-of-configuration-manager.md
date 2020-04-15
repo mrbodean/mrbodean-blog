@@ -24,7 +24,7 @@ This will grab all updates that are not declined and send them to a Gridview win
 If you get timeouts with this then your wsus server needs some love. You can retry but if you get timeouts 2 or 3 times stop and go read [the complete guide to Microsoft WSUS and Configuration Manager SUP maintenance](https://support.microsoft.com/en-us/help/4490644/complete-guide-to-microsoft-wsus-and-configuration-manager-sup-maint). Follow those steps and come back and try again.
 
 Once you get the GridView window start searching for updates that can be declined. For example search for XP and see what you get. Here is what I found on one of my servers
-![wsus_xpsearch]({{site.url}}/{{site.baseurl}}/media/wsus_xpsearch-1024x526.jpg)
+![wsus_xpsearch]({{site.url}}/media/wsus_xpsearch-1024x526.jpg)
 Lots and lots of XP updates. What I found is that even when you stop syncing the product the updates already in the catalog stay until you decline them. Why does the matter you ask? While the clients do not get them sent to them the wsus server has to process the updates in queries when a client request a scan. In my case a server with plenty of CPU and Memory using a full SQL install could only handle ~50 scan requests before getting overworked. After declining all the old unwanted update performance returned to normal.
 
 Using the variable $allupdates from the powershell above I created several rules to identify and decline updates. Now this is what could be declined in my environment. YOU MUST EVALUATE WHAT CAN BE DECLINED IN YOUR ENVIRONMENT. I am posting these a examples of what I did and how I cleaned up my environment. If you copy what I did and find that you need the updates, all is not lost, just approve the update again and it will be available again.

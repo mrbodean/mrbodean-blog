@@ -14,7 +14,7 @@ from v_r_system sys
 Group By uss.LastErrorCode
 order by 'Count'
 ```
-![SQL_CountofScanErrors_Grouped]({{site.url}}/{{site.baseurl}}/media/software-update-troubleshooting-finding-the-problem-children/SQL_CountofScanErrors_Grouped.jpg)
+![SQL_CountofScanErrors_Grouped]({{site.url}}/media/software-update-troubleshooting-finding-the-problem-children/SQL_CountofScanErrors_Grouped.jpg)
 
 This gives you report of the number of systems that are experiencing the same error. A small modification allows you focus in on specific client populations. For example to just report on servers
 ```SQL
@@ -36,6 +36,6 @@ select distinct sys.name0 [Computer Name],os.caption0 [OS],convert(nvarchar(26),
  where uss.lasterrorcode ='-2145107952' and os.Caption0 like '%Server%'
  order by uss.lasterrorcode
 ```
-In this example the error code -2145107952 has a hex value of 0x80244010. Which translates to ![ErrorLookup_80244010]({{site.url}}/{{site.baseurl}}/media/software-update-troubleshooting-finding-the-problem-children/ErrorLookup_80244010.jpg)
+In this example the error code -2145107952 has a hex value of 0x80244010. Which translates to ![ErrorLookup_80244010]({{site.url}}/media/software-update-troubleshooting-finding-the-problem-children/ErrorLookup_80244010.jpg)
 
 Armed with this info I can begin tacking the largest group of systems with the same error.  While the root cause and resolution can be different depending on the environment these steps will help identify what to focus on.
