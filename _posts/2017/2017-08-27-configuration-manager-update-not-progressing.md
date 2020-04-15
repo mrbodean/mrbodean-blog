@@ -1,0 +1,9 @@
+---
+layout: post
+title: Configuration Manager Update not progressing
+date: 2017-08-27
+---
+
+[Technical Preview 1708](https://blogs.technet.microsoft.com/enterprisemobility/2017/08/26/update-1708-for-configuration-manager-technical-preview-branch-available-now/) was released yesterday and I fired up the lab virtual machines to give it a try. ***Several Hours Later*** I am still trying to install. 1st I had a few SQL issues to sort out but mainly they were let the database start before opening the console. Next the download would not start. It turns out the sms_site_component_manager was crashing.  Luckily a quick search found that is was a known issue https://social.technet.microsoft.com/Forums/msonline/en-US/54d5a139-a4b1-4cb5-9644-2b826c4b56eb/site-component-manager-crashing-once-per-hour-after-upgrade-to-1706?forum=ConfigMgrCBGeneral
+
+OK, now that the component manager is running the download completes and I can start the install. Everything looks normal and I head off to bed to let it cook overnight. Imagine my surprise to find that this morning the status has not changed. The next step in the update would be to run the prerequisite change and it has no status. Off to the logs and I find that the CMUpdate.log has not been updated in a while. And one of the last updates is "CONFIGURATION_MANAGER_UPDATE service is signalled to stop..."  So I check the windows services and sure enough the CONFIGURATION_MANAGER_UPDATE service is not running. After starting that service up now everything is progressing again. Adding this to my growing list of upgrade checks and making a pot of coffee while I watch the logs for this upgrade.
