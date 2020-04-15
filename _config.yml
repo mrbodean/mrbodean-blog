@@ -5,7 +5,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Ramblings and observations on Powershell, Automation, Azure, 
   Microsoft Endpoint Manager (Configuration Manager and Intune). 
   And any other random topic that needs to get out of my head. 
-baseurl: "/mrbodean-blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: MrBoDean
 github_username:  MrBoDean
@@ -16,6 +16,8 @@ plugins:
   - jekyll-feed
 # Google services
 google_analytics: UA-1101170-4
+
+permalink: pretty
 
 # Exclude from processing.
 # The following items will not be processed, by default.
