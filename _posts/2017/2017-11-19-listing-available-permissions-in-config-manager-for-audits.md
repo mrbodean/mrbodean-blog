@@ -9,7 +9,7 @@ While I love the new pace of development for Configuration Manager there are tim
 
 &nbsp;
 
-![]({{site.url}}/{{site.baseurl}}/media/AvailablePermsReport.jpg)
+![]({{site.url}}/media/AvailablePermsReport.jpg)
 
 The "RBAC Available Permissions by Object Type" report will enumerate all the available Securable Object Types and list the permissions that can be set on each object type.
 

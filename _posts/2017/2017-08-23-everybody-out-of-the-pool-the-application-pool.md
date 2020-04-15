@@ -5,7 +5,7 @@ date: 2017-08-23
 tags: ["ConfigMgr","Powershell","SCCM","SQL"]
 ---
 
-![]({{site.url}}/{{site.baseurl}}/media/big-pool-party.jpg)
+![]({{site.url}}/media/big-pool-party.jpg)
 
 Hi my name is MrBoDean and I need to confess that I am not running a supported version of SCCM. Yes, I am migrating to Current Branch but the majority of my system are still in SCCM 2012 R2 without SP1. The reason why is quite boring and repeated and many companies I am sure, but takes a while to tell. So for the past year it feels like duct tape and bailing wire are all that is keeping the 2012 environment up while we try to upgrade between a string of crisis. It is a shame when the Premier Support engineers are on a 1st name basis with you.
 
