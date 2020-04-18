@@ -16,7 +16,7 @@ plugins:
   - jekyll-feed
 # Google services
 google_analytics: UA-1101170-4
-
+future: false
 permalink: pretty
 paginate: 5
 
