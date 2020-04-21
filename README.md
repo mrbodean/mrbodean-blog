@@ -1,2 +1,2 @@
 # mrbodean-blog
-![Build every hour](https://github.com/mrbodean/mrbodean-blog/workflows/Build%20every%20hour/badge.svg)
+![Scheduled Posts](https://github.com/mrbodean/mrbodean-blog/workflows/Scheduled%20Posts/badge.svg)
